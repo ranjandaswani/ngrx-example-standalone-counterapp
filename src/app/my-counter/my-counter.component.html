@@ -1,7 +1,17 @@
-<div class="container">
-  <button  type="button" (click)="increment()" class="btn btn-primary">Increment</button>
-  <div>Current Count: {{ count$ | async }}</div>
-  <button type="button" (click)="decrement()" class="btn btn-success">Decrement</button>
-  <button  type="button" (click)="reset()" class="btn btn-primary">Reset Counter</button>
-</div>
+<div
+  class="container d-flex justify-content-center align-items-center min-vh-100"
+>
+  <div class="card shadow-lg p-4" style="width: 24rem">
+    <h4 class="text-center mb-4">NgRx Counter</h4>
 
+    <div class="d-flex justify-content-center mb-3 gap-2">
+      <button class="btn btn-primary" (click)="increment()">Increment</button>
+      <button class="btn btn-success" (click)="decrement()">Decrement</button>
+      <button class="btn btn-danger" (click)="reset()">Reset</button>
+    </div>
+
+    <div class="text-center">
+      <h5>Current Count: {{ count$ | async }}</h5>
+    </div>
+  </div>
+</div>
