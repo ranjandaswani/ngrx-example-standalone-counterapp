@@ -10,5 +10,5 @@ import { CommonModule } from '@angular/common';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'ngrx-counter';
+  title = 'ngrx counter using standalone components';
 }
